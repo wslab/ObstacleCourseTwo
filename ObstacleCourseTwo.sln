@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstacleCourseTwo", "ObstacleCourseTwo\ObstacleCourseTwo.csproj", "{01B4A019-8CB9-42EA-BD89-403BCFE8ABFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstacleCourseTwoUnitTests", "ObstacleCourseTwoUnitTests\ObstacleCourseTwoUnitTests.csproj", "{47767FB1-0A97-4312-B10A-1409BE6FDA0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObstacleCourseTwoClassLibrary", "ObstacleCourseTwoClassLibrary\ObstacleCourseTwoClassLibrary.csproj", "{865A52E4-8F7F-4BF9-B6FE-547FB09FB626}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{01B4A019-8CB9-42EA-BD89-403BCFE8ABFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01B4A019-8CB9-42EA-BD89-403BCFE8ABFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01B4A019-8CB9-42EA-BD89-403BCFE8ABFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47767FB1-0A97-4312-B10A-1409BE6FDA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47767FB1-0A97-4312-B10A-1409BE6FDA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47767FB1-0A97-4312-B10A-1409BE6FDA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47767FB1-0A97-4312-B10A-1409BE6FDA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865A52E4-8F7F-4BF9-B6FE-547FB09FB626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865A52E4-8F7F-4BF9-B6FE-547FB09FB626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865A52E4-8F7F-4BF9-B6FE-547FB09FB626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865A52E4-8F7F-4BF9-B6FE-547FB09FB626}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
