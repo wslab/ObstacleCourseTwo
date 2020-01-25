@@ -70,13 +70,16 @@ namespace ObstacleCourseTwoUnitTests
             int[] arr = new int[] { 0, 1, 2, 3, 4, 5 };
             Part2.DoubleEachNumber(arr);
             CollectionAssert.AreEqual(new int[] { 0, 2, 4, 6, 8, 10 }, arr);
+            int[] arr2 = new int[] { 5, 4, 3, 2, 1, 0 };
+            Part2.DoubleEachNumber(arr2);
+            CollectionAssert.AreEqual(new int[] { 10, 8, 6, 4, 2, 0 }, arr2);
         }
 
         [TestMethod]
         public void TestArray1to10()
         {
             int[] result = Part2.Array1to10();
-            CollectionAssert.AreEqual(new int[] { 1,2,3,4,5,6,7,8,9,10 }, result);
+            CollectionAssert.AreEqual(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }, result);
         }
 
         [TestMethod]
