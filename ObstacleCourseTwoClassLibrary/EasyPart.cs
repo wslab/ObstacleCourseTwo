@@ -42,6 +42,10 @@
         {
             int[] result = new int[n];
             // write code here
+            for (int i = 0; i < n; i++)
+            {
+                result[i] = 3;
+            }
             return result;
         }
 
