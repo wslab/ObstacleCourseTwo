@@ -1,4 +1,8 @@
-﻿namespace ObstacleCourseTwoClassLibrary
+﻿using System;
+using ObstacleCourseTwoClassLibrary;
+using ObstacleCourseTwo;
+
+namespace ObstacleCourseTwoClassLibrary
 {
     public static class EasyPart
     {
@@ -22,8 +26,10 @@
             for (int i = 0; i < 5; i++)
             {
                 result[i] = 1;
+                Console.WriteLine(result[i]);
             }
             return result;
+            //Console.WriteLine(result[i]);
         }
 
         // create array with N elements and fill it with 2's - for loop

@@ -63,15 +63,36 @@ namespace ObstacleCourseTwoUnitTests
             Part2.SetAllValuesToN(arr, 4);
             CollectionAssert.AreEqual(new int[] { 4, 4, 4, 4, 4, 4 }, arr);
         }
-
+        //Ниже - тест метод с двумя переменными от Коллеги. Собираюсь разбивать этот тест на два теста с двумя переменными arr и arr2
+        //для того, чтобы легче было тестировать и найти проблему
+        //[TestMethod]
+        //public void TestDoubleEachNumber()
+        //{
+        //    int[] arr = new int[] { 0, 1, 2, 3, 4, 5 };
+        //    Part2.DoubleEachNumber(arr);
+        //    CollectionAssert.AreEqual(new int[] { 0, 2, 4, 6, 8, 10 }, arr);
+        //    int[] arr2 = new int[] { 5, 4, 3, 2, 1, 0 };
+        //    Part2.DoubleEachNumber(arr2);
+        //    CollectionAssert.AreEqual(new int[] { 10, 8, 6, 4, 2, 0 }, arr2);
+        //}
         [TestMethod]
-        public void TestDoubleEachNumber()
+        public void TestDoubleEachNumberFirst()
         {
+            //Arrange
             int[] arr = new int[] { 0, 1, 2, 3, 4, 5 };
+            //Act
             Part2.DoubleEachNumber(arr);
+            //Assert
             CollectionAssert.AreEqual(new int[] { 0, 2, 4, 6, 8, 10 }, arr);
-            int[] arr2 = new int[] { 5, 4, 3, 2, 1, 0 };
+        }
+        [TestMethod]
+        public void TestDoubleEachNumberSecond()
+        {
+            //Arrange
+            int[]arr2 = new int[] { 5, 4, 3, 2, 1, 0 };
+            //Act
             Part2.DoubleEachNumber(arr2);
+            //Assert
             CollectionAssert.AreEqual(new int[] { 10, 8, 6, 4, 2, 0 }, arr2);
         }
 

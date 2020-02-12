@@ -45,5 +45,11 @@
     <Compile Include="Part2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ObstacleCourseTwo\ObstacleCourseTwo.csproj">
+      <Project>{01b4a019-8cb9-42ea-bd89-403bcfe8abff}</Project>
+      <Name>ObstacleCourseTwo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

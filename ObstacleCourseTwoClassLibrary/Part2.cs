@@ -93,8 +93,8 @@ namespace ObstacleCourseTwoClassLibrary
             int result = 2; //сначала инициировала int result =0, но это была ошибка. Тест помог найти ошибку!
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = result * i;
-
+                arr[i] = result * arr[i];//ошибка была в этой линии. arr[i] = result * i; неправильно, так как индекс в результате был неправильный
+                
             }
         }
 
@@ -104,27 +104,32 @@ namespace ObstacleCourseTwoClassLibrary
             //int[] result = new int[0]; // this line is not correct, fix it
             int[] result = new int[10]; // there are 10 elements to fill in
                                         // code goes here
-                                        //сделала сама без подсказок - способ номер один, но проблема может быть в большом количестве элементов
-                                        //result [0] = 1;
-                                        //result[1] = 2;
-                                        //result[2] = 3;
-                                        //result[3] = 4;
-                                        //result[4] = 5;
-                                        //result[5] = 6;
-                                        //result[6] = 7;
-                                        //result[7] = 8;
-                                        //result[8] = 9;
-                                        //result[9] = 10;
-                                        //for (int i = 0; i < result.Length; i ++)
-            for (int i = 0; i < result.Length; i++)
-            {
-                //if (result[i] >= 1 || result [i] <=10)
-                if (result.Length >= 1 || result.Length <= 10)
-                    result[i] = i;
-            }
+            //START: сделала сама без подсказок - способ номер один, но проблема может быть в большом количестве элементов
+            //result[0] = 1;
+            //result[1] = 2;
+            //result[2] = 3;
+            //result[3] = 4;
+            //result[4] = 5;
+            //result[5] = 6;
+            //result[6] = 7;
+            //result[7] = 8;
+            //result[8] = 9;
+            //result[9] = 10;
+            //FINISH
+            //Второй способ:
 
 
-            return result;
+           for (int i = 0; i < result.Length; i++)
+                {
+                    //if (result[i] >= 1 || result [i] <=10)
+                    if (result.Length >= 1 || result.Length <= 10)
+                        result[i] = i;
+
+                }
+
+
+
+                return result;
         }
 
         // create array of size 11 and fill with numbers from 10 to 20
